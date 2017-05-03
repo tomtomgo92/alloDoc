@@ -19,12 +19,8 @@ class customButton: UIButton
     
     func border(pixel: Double, couleurHEX: String)
     {
-        
         self.layer.borderWidth = CGFloat(pixel)
-        //self.layer.borderColor = (UIColor(cgColor: couleur as! CGColor) as! CGColor)
-        
-        
-        layer.borderColor = MyCustonColor().hexStringToUIColor(hex: "\(couleurHEX)").cgColor
+        self.layer.borderColor = MyCustonColor().hexStringToUIColor(hex: "\(couleurHEX)").cgColor
     }
 
     
