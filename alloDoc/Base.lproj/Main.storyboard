@@ -26,62 +26,62 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="xia-2r-9tR">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </mapView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="dun-pi-XTo">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dun-pi-XTo">
                                 <rect key="frame" x="16" y="584" width="343" height="68"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="LV4-u8-ygi">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="33"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LV4-u8-ygi">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="31.5"/>
                                         <subviews>
-                                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFG-3q-gvb">
-                                                <rect key="frame" x="0.0" y="0.0" width="111.5" height="33"/>
-                                                <color key="backgroundColor" red="0.27058823529999998" green="0.5450980392" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFG-3q-gvb" customClass="customButton" customModule="alloDoc" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="111" height="31.5"/>
+                                                <color key="backgroundColor" red="0.49803921568627452" green="0.8901960784313725" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                <state key="normal" title="MEDECIN">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BlF-wh-Pps" customClass="customButton" customModule="alloDoc" customModuleProvider="target">
+                                                <rect key="frame" x="116" y="0.0" width="111" height="31.5"/>
+                                                <color key="backgroundColor" red="1" green="0.82745098039215681" blue="0.43137254901960786" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
                                                 <state key="normal" title="DENTISTE">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BlF-wh-Pps">
-                                                <rect key="frame" x="114.5" y="0.0" width="112" height="33"/>
-                                                <color key="backgroundColor" red="0.27058823529999998" green="0.5450980392" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                                <state key="normal" title="DENTISTE">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoB-To-ApI">
-                                                <rect key="frame" x="229.5" y="0.0" width="113.5" height="33"/>
-                                                <color key="backgroundColor" red="0.27058823529999998" green="0.5450980392" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                                <state key="normal" title="DENTISTE">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoB-To-ApI" customClass="customButton" customModule="alloDoc" customModuleProvider="target">
+                                                <rect key="frame" x="232" y="0.0" width="111" height="31.5"/>
+                                                <color key="backgroundColor" red="0.062745098039215685" green="0.44313725490196076" blue="0.96470588235294119" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                <state key="normal" title="PHARMACIE">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="6b2-qe-tpL">
-                                        <rect key="frame" x="0.0" y="35" width="343" height="33"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6b2-qe-tpL">
+                                        <rect key="frame" x="0.0" y="36.5" width="343" height="31.5"/>
                                         <subviews>
-                                            <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5J-ZE-fwE">
-                                                <rect key="frame" x="0.0" y="0.0" width="111.5" height="33"/>
-                                                <color key="backgroundColor" red="0.27058823529999998" green="0.5450980392" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                                <state key="normal" title="DENTISTE">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5J-ZE-fwE" customClass="customButton" customModule="alloDoc" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="111" height="31.5"/>
+                                                <color key="backgroundColor" red="1" green="0.34509803921568627" blue="0.27843137254901962" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                <state key="normal" title="HOSPITAL">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bjc-Rf-tc3">
-                                                <rect key="frame" x="114.5" y="0.0" width="112" height="33"/>
-                                                <color key="backgroundColor" red="0.27058823529999998" green="0.5450980392" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                                <state key="normal" title="DENTISTE">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bjc-Rf-tc3" customClass="customButton" customModule="alloDoc" customModuleProvider="target">
+                                                <rect key="frame" x="116" y="0.0" width="111" height="31.5"/>
+                                                <color key="backgroundColor" red="0.82352941176470584" green="0.82745098039215681" blue="0.82745098039215681" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                <state key="normal" title="CLINIQUE">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urg-dc-efG">
-                                                <rect key="frame" x="229.5" y="0.0" width="113.5" height="33"/>
-                                                <color key="backgroundColor" red="0.27058823529999998" green="0.5450980392" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                                <state key="normal" title="DENTISTE">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urg-dc-efG" customClass="customButton" customModule="alloDoc" customModuleProvider="target">
+                                                <rect key="frame" x="232" y="0.0" width="111" height="31.5"/>
+                                                <color key="backgroundColor" red="0.33725490196078434" green="0.8901960784313725" blue="0.8901960784313725" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                <state key="normal" title="VETERINAIRE">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
@@ -92,15 +92,22 @@
                                     <constraint firstAttribute="width" secondItem="dun-pi-XTo" secondAttribute="height" multiplier="343:68" id="Snn-OB-8iM"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19b-wz-NRF">
-                                <rect key="frame" x="313" y="28" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19b-wz-NRF">
+                                <rect key="frame" x="324" y="31" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="19b-wz-NRF" secondAttribute="height" multiplier="1:1" id="nsB-Am-uiA"/>
+                                </constraints>
+                                <state key="normal" image="maps-location-circular-button.png"/>
+                                <connections>
+                                    <action selector="backToMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O3Y-JE-0DZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xia-2r-9tR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0AF-2A-JZY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="19b-wz-NRF" secondAttribute="trailing" constant="11" id="7fs-a6-v1l"/>
+                            <constraint firstItem="19b-wz-NRF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="11" id="8TZ-oH-kBL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dun-pi-XTo" secondAttribute="trailing" id="HMM-wc-6cl"/>
                             <constraint firstItem="dun-pi-XTo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Y2z-2d-gt9"/>
                             <constraint firstItem="xia-2r-9tR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ed4-07-oXH"/>
@@ -111,6 +118,12 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="xia-2r-9tR" id="3sp-AF-NHq"/>
+                        <outletCollection property="speButtons" destination="CFG-3q-gvb" collectionClass="NSMutableArray" id="N4s-xT-Xgn"/>
+                        <outletCollection property="speButtons" destination="BlF-wh-Pps" collectionClass="NSMutableArray" id="7wz-Uq-yTg"/>
+                        <outletCollection property="speButtons" destination="qoB-To-ApI" collectionClass="NSMutableArray" id="9UF-pG-5fW"/>
+                        <outletCollection property="speButtons" destination="q5J-ZE-fwE" collectionClass="NSMutableArray" id="ZCS-JY-ZrE"/>
+                        <outletCollection property="speButtons" destination="Bjc-Rf-tc3" collectionClass="NSMutableArray" id="LBH-GX-y6c"/>
+                        <outletCollection property="speButtons" destination="urg-dc-efG" collectionClass="NSMutableArray" id="fuZ-IV-BXh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -118,4 +131,7 @@
             <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="maps-location-circular-button.png" width="24" height="24"/>
+    </resources>
 </document>

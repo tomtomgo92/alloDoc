@@ -11,7 +11,10 @@ import MapKit
 
 class Artwork: NSObject, MKAnnotation
 {
-    let title: String
+    let pinImage1 = UIImage(named: "maps-location-circular-button.png")
+    
+    
+    let title: String?
     let locationName: String
     let discipline: String
     let coordinate: CLLocationCoordinate2D
@@ -27,10 +30,21 @@ class Artwork: NSObject, MKAnnotation
         super.init()
     }
     
-    var subtitle: String
+    var subtitle: String?
     {
         return locationName
     }
-    
+    /*
+    func pinColor() -> MKPinAnnotationColor
+    {
+        switch discipline
+        {
+        case "sculture":
+            return pinImage1
+        default:
+            return .green
+        }
+    }
+*/
     
 } //[End class]
