@@ -16,6 +16,7 @@ class ViewController: UIViewController
     
     
     @IBOutlet var speButtons: [customButton]!
+    @IBOutlet weak var addButtOutlet: customButton!
     
     
    
@@ -47,8 +48,11 @@ class ViewController: UIViewController
 
         for button in speButtons
         {
-            button.radius = 10
+            button.radius(8)
         }
+        
+        addButtOutlet.border(pixel: 1.5, couleurHEX: "#FF0000")
+        //addButtOutlet.layer.borderColor = UIColor.cgColor
         
     }
     

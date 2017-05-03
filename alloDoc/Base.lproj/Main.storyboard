@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F43c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -102,6 +102,30 @@
                                     <action selector="backToMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O3Y-JE-0DZ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFE-xT-plU" customClass="customButton" customModule="alloDoc" customModuleProvider="target">
+                                <rect key="frame" x="16" y="30" width="33" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98081284759999998" green="0.96083718539999996" blue="0.95635110140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="add.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACv-0W-6CW" customClass="customButton" customModule="alloDoc" customModuleProvider="target">
+                                <rect key="frame" x="16" y="69" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.019891490399700618" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="URGENCE">
+                                    <color key="titleColor" red="1" green="0.99881748227334721" blue="0.99877861889487274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yoZ-Ot-mbr" customClass="customButton" customModule="alloDoc" customModuleProvider="target">
+                                <rect key="frame" x="57" y="31" width="59" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.65967049870466321" green="0.64592736331498268" blue="0.64592736331498268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="TOUT">
+                                    <color key="titleColor" red="1" green="0.97916666666666663" blue="0.97916666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -117,6 +141,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addButtOutlet" destination="NFE-xT-plU" id="0qD-CK-84R"/>
                         <outlet property="mapView" destination="xia-2r-9tR" id="3sp-AF-NHq"/>
                         <outletCollection property="speButtons" destination="CFG-3q-gvb" collectionClass="NSMutableArray" id="N4s-xT-Xgn"/>
                         <outletCollection property="speButtons" destination="BlF-wh-Pps" collectionClass="NSMutableArray" id="7wz-Uq-yTg"/>
@@ -124,6 +149,8 @@
                         <outletCollection property="speButtons" destination="q5J-ZE-fwE" collectionClass="NSMutableArray" id="ZCS-JY-ZrE"/>
                         <outletCollection property="speButtons" destination="Bjc-Rf-tc3" collectionClass="NSMutableArray" id="LBH-GX-y6c"/>
                         <outletCollection property="speButtons" destination="urg-dc-efG" collectionClass="NSMutableArray" id="fuZ-IV-BXh"/>
+                        <outletCollection property="speButtons" destination="ACv-0W-6CW" collectionClass="NSMutableArray" id="mBa-zY-jBx"/>
+                        <outletCollection property="speButtons" destination="yoZ-Ot-mbr" collectionClass="NSMutableArray" id="ejg-nf-Sys"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -132,6 +159,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="add.png" width="24" height="24"/>
         <image name="maps-location-circular-button.png" width="24" height="24"/>
     </resources>
 </document>

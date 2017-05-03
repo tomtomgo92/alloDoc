@@ -11,15 +11,42 @@ import UIKit
 class customButton: UIButton
 {
     
-    var radius: Float = 0.0
+    func radius(_ radius: Double)
     {
-        didSet
-        {
-            self.layer.cornerRadius = CGFloat(radius)
-        }
-    } //[end radius]
+        self.layer.cornerRadius = CGFloat(radius)
+    }
     
     
+    func border(pixel: Double, couleurHEX: String)
+    {
+        
+        self.layer.borderWidth = CGFloat(pixel)
+        //self.layer.borderColor = (UIColor(cgColor: couleur as! CGColor) as! CGColor)
+        
+        
+        layer.borderColor = MyCustonColor().hexStringToUIColor(hex: "\(couleurHEX)").cgColor
+    }
 
+    
+    
+    /*
+     var border: Float = 0.0
+     {
+     didSet
+     {
+     self.layer.borderWidth = CGFloat(border)
+     self.layer.borderColor = UIColor.black.cgColor
+     }
+     } //[end border]
+     
+     var radius: Float = 0.0
+     {
+     didSet
+     {
+     self.layer.cornerRadius = CGFloat(radius)
+     }
+     } //[end radius]
+     
+     */
     
 } //[end class]

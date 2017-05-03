@@ -13,10 +13,10 @@
 		04375A2D1EB88A47009C9ADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04375A2C1EB88A47009C9ADD /* Assets.xcassets */; };
 		04375A301EB88A47009C9ADD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04375A2E1EB88A47009C9ADD /* LaunchScreen.storyboard */; };
 		04375A621EB8D475009C9ADD /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04375A611EB8D475009C9ADD /* Artwork.swift */; };
-		04375A641EB8D829009C9ADD /* maps-location-circular-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 04375A631EB8D829009C9ADD /* maps-location-circular-button.png */; };
-		04375A661EB9C60C009C9ADD /* PublicArt.json in Resources */ = {isa = PBXBuildFile; fileRef = 04375A651EB9C60C009C9ADD /* PublicArt.json */; };
 		04375A681EB9CD20009C9ADD /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04375A671EB9CD20009C9ADD /* VCMapView.swift */; };
 		04375A6E1EB9E1AE009C9ADD /* customButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04375A6D1EB9E1AE009C9ADD /* customButton.swift */; };
+		E2BEA4B81EBA33A900E47415 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = E2BEA4B71EBA33A900E47415 /* add.png */; };
+		E2BEA4BA1EBA3AE600E47415 /* MyCustonColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BEA4B91EBA3AE600E47415 /* MyCustonColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +28,10 @@
 		04375A2F1EB88A47009C9ADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04375A311EB88A47009C9ADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04375A611EB8D475009C9ADD /* Artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
-		04375A631EB8D829009C9ADD /* maps-location-circular-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "maps-location-circular-button.png"; path = "../../../../Downloads/maps-location-circular-button.png"; sourceTree = "<group>"; };
-		04375A651EB9C60C009C9ADD /* PublicArt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PublicArt.json; path = ../../../../Downloads/HonoluluArtResources/PublicArt.json; sourceTree = "<group>"; };
 		04375A671EB9CD20009C9ADD /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
 		04375A6D1EB9E1AE009C9ADD /* customButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customButton.swift; sourceTree = "<group>"; };
+		E2BEA4B71EBA33A900E47415 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		E2BEA4B91EBA3AE600E47415 /* MyCustonColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustonColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +69,12 @@
 				04375A611EB8D475009C9ADD /* Artwork.swift */,
 				04375A291EB88A47009C9ADD /* Main.storyboard */,
 				04375A2C1EB88A47009C9ADD /* Assets.xcassets */,
-				04375A651EB9C60C009C9ADD /* PublicArt.json */,
-				04375A631EB8D829009C9ADD /* maps-location-circular-button.png */,
 				04375A2E1EB88A47009C9ADD /* LaunchScreen.storyboard */,
 				04375A311EB88A47009C9ADD /* Info.plist */,
 				04375A671EB9CD20009C9ADD /* VCMapView.swift */,
 				04375A6D1EB9E1AE009C9ADD /* customButton.swift */,
+				E2BEA4B71EBA33A900E47415 /* add.png */,
+				E2BEA4B91EBA3AE600E47415 /* MyCustonColor.swift */,
 			);
 			path = alloDoc;
 			sourceTree = "<group>";
@@ -111,7 +111,7 @@
 				TargetAttributes = {
 					04375A211EB88A46009C9ADD = {
 						CreatedOnToolsVersion = 8.3.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -140,9 +140,8 @@
 			files = (
 				04375A301EB88A47009C9ADD /* LaunchScreen.storyboard in Resources */,
 				04375A2D1EB88A47009C9ADD /* Assets.xcassets in Resources */,
-				04375A641EB8D829009C9ADD /* maps-location-circular-button.png in Resources */,
 				04375A2B1EB88A47009C9ADD /* Main.storyboard in Resources */,
-				04375A661EB9C60C009C9ADD /* PublicArt.json in Resources */,
+				E2BEA4B81EBA33A900E47415 /* add.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +157,7 @@
 				04375A621EB8D475009C9ADD /* Artwork.swift in Sources */,
 				04375A261EB88A47009C9ADD /* AppDelegate.swift in Sources */,
 				04375A6E1EB9E1AE009C9ADD /* customButton.swift in Sources */,
+				E2BEA4BA1EBA3AE600E47415 /* MyCustonColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,10 +280,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = alloDoc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = afpa.alloDoc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -292,10 +294,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = alloDoc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = afpa.alloDoc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
