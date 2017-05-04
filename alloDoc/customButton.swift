@@ -100,13 +100,20 @@ class customButton: UIButton
         self.contentEdgeInsets = UIEdgeInsetsMake(5, 10, 5, 10)
     }
 
-    func ombre(pixel: Double, couleurHEX: String, Opacité: Double, Radius: Double)
+    func ombre()
     {
-        self.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
-        self.layer.shadowOffset = CGSize(width: 0, height: 3)
-        self.layer.shadowOpacity = 1.0
-        self.layer.shadowRadius = 10.0
-        self.layer.masksToBounds = false
+        self.layer.cornerRadius = 2
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOffset = CGSize(width: 0.5, height: 0.4)  //Here you control x and y
+        self.layer.shadowOpacity = 0.5
+        self.layer.shadowRadius = 5.0 //Here your control your blur
+        self.layer.masksToBounds =  false
+        
+    }
+    
+    func btmInsets()
+    {
+        self.contentEdgeInsets = UIEdgeInsetsMake(5, 10, 5, 10)
     }
 
     
