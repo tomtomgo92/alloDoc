@@ -18,11 +18,16 @@ class ViewController: UIViewController
     @IBOutlet var speButtons: [customButton]!
     @IBOutlet weak var addButtOutlet: customButton!
     
+    //Test
+    @IBOutlet weak var testBut: customButton!
+    
+    
     
    
     
     // Initialise la carte a la coordonnee (Ici HINOLULU)
-    let initialLocation = CLLocation(latitude: 21.282778, longitude: -157.829444)
+    let initialLocation = CLLocation(latitude: 21.282778,
+                                     longitude: -157.829444)
     let regionRadius: CLLocationDistance = 1000 //Sur 1000 Metre (1KM) a partir du centre de la mapView
     
 
@@ -42,7 +47,8 @@ class ViewController: UIViewController
         let artwork = Artwork(title:        "King David Kalakaua",
                               locationName: "Waikiti Gateway Park",
                               discipline:   "Sculture",
-                              coordinate:   CLLocationCoordinate2D(latitude: 21.283921, longitude: -157.831661))
+                              coordinate:   CLLocationCoordinate2D(latitude: 21.283921,
+                                                                   longitude: -157.831661))
         
         mapView.addAnnotation(artwork)
 
@@ -52,7 +58,12 @@ class ViewController: UIViewController
         }
         
         addButtOutlet.border(pixel: 1.5, couleurHEX: "#FF0000")
+        
+        
         //addButtOutlet.layer.borderColor = UIColor.cgColor
+        
+        testBut.delfautOutBtm()
+        testBut.ombre(pixel: 1, couleurHEX: "222222", Opacité: 1, Radius: 0)
         
     }
     

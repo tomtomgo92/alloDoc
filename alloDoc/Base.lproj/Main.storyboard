@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F43c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -97,7 +97,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="19b-wz-NRF" secondAttribute="height" multiplier="1:1" id="nsB-Am-uiA"/>
                                 </constraints>
-                                <state key="normal" image="maps-location-circular-button.png"/>
+                                <state key="normal" image="maps.png"/>
                                 <connections>
                                     <action selector="backToMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O3Y-JE-0DZ"/>
                                 </connections>
@@ -126,6 +126,11 @@
                                     <color key="titleColor" red="1" green="0.97916666666666663" blue="0.97916666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIU-fL-plS" customClass="customButton" customModule="alloDoc" customModuleProvider="target">
+                                <rect key="frame" x="158" y="318" width="59" height="30"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title=" coucou "/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -133,7 +138,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="19b-wz-NRF" secondAttribute="trailing" constant="11" id="7fs-a6-v1l"/>
                             <constraint firstItem="19b-wz-NRF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="11" id="8TZ-oH-kBL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dun-pi-XTo" secondAttribute="trailing" id="HMM-wc-6cl"/>
+                            <constraint firstItem="gIU-fL-plS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="KPe-dG-yeM"/>
                             <constraint firstItem="dun-pi-XTo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Y2z-2d-gt9"/>
+                            <constraint firstItem="gIU-fL-plS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YYh-Pd-Mur"/>
                             <constraint firstItem="xia-2r-9tR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ed4-07-oXH"/>
                             <constraint firstAttribute="trailing" secondItem="xia-2r-9tR" secondAttribute="trailing" id="fI7-Ct-YbF"/>
                             <constraint firstItem="xia-2r-9tR" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="gRm-mz-iAx"/>
@@ -143,6 +150,7 @@
                     <connections>
                         <outlet property="addButtOutlet" destination="NFE-xT-plU" id="0qD-CK-84R"/>
                         <outlet property="mapView" destination="xia-2r-9tR" id="3sp-AF-NHq"/>
+                        <outlet property="testBut" destination="gIU-fL-plS" id="r0h-Rq-jwU"/>
                         <outletCollection property="speButtons" destination="CFG-3q-gvb" collectionClass="NSMutableArray" id="N4s-xT-Xgn"/>
                         <outletCollection property="speButtons" destination="BlF-wh-Pps" collectionClass="NSMutableArray" id="7wz-Uq-yTg"/>
                         <outletCollection property="speButtons" destination="qoB-To-ApI" collectionClass="NSMutableArray" id="9UF-pG-5fW"/>
@@ -160,6 +168,6 @@
     </scenes>
     <resources>
         <image name="add.png" width="24" height="24"/>
-        <image name="maps-location-circular-button.png" width="24" height="24"/>
+        <image name="maps.png" width="24" height="24"/>
     </resources>
 </document>

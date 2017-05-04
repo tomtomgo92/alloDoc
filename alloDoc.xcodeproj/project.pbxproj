@@ -66,17 +66,16 @@
 		04375A241EB88A46009C9ADD /* alloDoc */ = {
 			isa = PBXGroup;
 			children = (
+				04BE3DF71EBB1367001BBB39 /* controller */,
+				04BE3DF61EBB1345001BBB39 /* myCustomFiles */,
 				04BE3DF31EBB12B7001BBB39 /* img */,
 				04375A251EB88A47009C9ADD /* AppDelegate.swift */,
-				04375A271EB88A47009C9ADD /* ViewController.swift */,
 				04375A611EB8D475009C9ADD /* Artwork.swift */,
 				04375A291EB88A47009C9ADD /* Main.storyboard */,
 				04375A2C1EB88A47009C9ADD /* Assets.xcassets */,
 				04375A2E1EB88A47009C9ADD /* LaunchScreen.storyboard */,
 				04375A311EB88A47009C9ADD /* Info.plist */,
 				04375A671EB9CD20009C9ADD /* VCMapView.swift */,
-				04375A6D1EB9E1AE009C9ADD /* customButton.swift */,
-				E2BEA4B91EBA3AE600E47415 /* MyCustonColor.swift */,
 			);
 			path = alloDoc;
 			sourceTree = "<group>";
@@ -88,6 +87,23 @@
 				04BE3DF41EBB12D8001BBB39 /* maps.png */,
 			);
 			name = img;
+			sourceTree = "<group>";
+		};
+		04BE3DF61EBB1345001BBB39 /* myCustomFiles */ = {
+			isa = PBXGroup;
+			children = (
+				04375A6D1EB9E1AE009C9ADD /* customButton.swift */,
+				E2BEA4B91EBA3AE600E47415 /* MyCustonColor.swift */,
+			);
+			name = myCustomFiles;
+			sourceTree = "<group>";
+		};
+		04BE3DF71EBB1367001BBB39 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				04375A271EB88A47009C9ADD /* ViewController.swift */,
+			);
+			name = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
