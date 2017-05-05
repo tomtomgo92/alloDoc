@@ -54,8 +54,9 @@ class ViewController: UIViewController
 
         for button in speButtons
         {
+            
+            button.ombre(CouleurHex: "#000000")
             button.radius(8)
-            button.ombre()
         }
         
         addButtOutlet.border(pixel: 1.5, couleurHEX: "#FF0000")
@@ -64,7 +65,8 @@ class ViewController: UIViewController
         //addButtOutlet.layer.borderColor = UIColor.cgColor
         
         testBut.delfautOutBtm()
-        testBut.ombre()
+        testBut.ombre(CouleurHex: "#000000")
+        testBut.border(pixel: 1.5, couleurHEX: "#FF0000")
         
     }
     

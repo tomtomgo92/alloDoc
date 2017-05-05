@@ -102,19 +102,13 @@ class customButton: UIButton
         self.contentEdgeInsets = UIEdgeInsetsMake(5, 10, 5, 10)
     }
 
-    func ombre()
+    func ombre(CouleurHex: String)
     {
-        let radius: CGFloat = self.frame.width / 2.0 //change it to .height if you need spread for height
-        let shadowPath = UIBezierPath(rect: CGRect(x: 0, y: 0, width: 2.1 * radius, height: self.frame.height))
-        //Change 2.1 to amount of spread you need and for height replace the code for height
-        
-        self.layer.cornerRadius = 2
-        self.layer.shadowColor = UIColor.black.cgColor
-        self.layer.shadowOffset = CGSize(width: 0.5, height: 0.4)  //Here you control x and y
+        self.layer.cornerRadius = 1
+        self.layer.shadowColor = MyCustonColor().hexStringToUIColor(hex: "\(CouleurHex)").cgColor
+        self.layer.shadowOffset = CGSize(width: 0.5, height: 1) //Here your control your spread
         self.layer.shadowOpacity = 0.5
-        self.layer.shadowRadius = 5.0 //Here your control your blur
-        self.layer.masksToBounds =  false
-        self.layer.shadowPath = shadowPath.cgPath
+        self.layer.shadowRadius = 0.5 //Here your control your blur
     }
     
     func btmInsets()
