@@ -11,136 +11,189 @@ import UIKit
 class customButton: UIButton
 {
 
+    //MARK: Palette
     
+    //Background
+    let Bg_Delfaut: UIColor = UIColor.white
+    let Bg_Primary: UIColor = UIColor.init(red: 2, green: 90, blue: 165, alpha: 1)
+    let Bg_Success: UIColor = UIColor.init(red: 68, green: 157, blue: 68, alpha: 1)
+    let Bg_Info:    UIColor = UIColor.init(red: 49, green: 176, blue: 213, alpha: 1)
+    let Bg_Warning: UIColor = UIColor.init(red: 236, green: 151, blue: 31, alpha: 1)
+    let Bg_Danger:  UIColor = UIColor.init(red: 201, green: 48, blue: 44, alpha: 1)
     
-    func radius(_ radius: Double)
+    //Border
+    let Bd_Delfaut: UIColor = UIColor.init(red: 204, green: 204, blue: 204, alpha: 1)
+    let Bd_Primary: UIColor = UIColor.init(red: 1, green: 99, blue: 31, alpha: 1)
+    let Bd_Success: UIColor = UIColor.init(red: 65, green: 150, blue: 65, alpha: 1)
+    let Bd_Info:    UIColor = UIColor.init(red: 42, green: 171, blue: 210, alpha: 1)
+    let Bd_Warning: UIColor = UIColor.init(red: 235, green: 147, blue: 22, alpha: 1)
+    let Bd_Danger:  UIColor = UIColor.init(red: 193, green: 46, blue: 42, alpha: 1)
+    
+    //Title
+    let TitleColorBlack: UIColor = UIColor.black
+    let TitleColorWhite: UIColor = UIColor.white
+    
+    //Insets
+    let InsetsSize = UIEdgeInsetsMake(5, 10, 5, 10)
+    
+    //Radius
+    let Radius = CGFloat(5)
+    
+    //Border Size
+    let Bd_size = CGFloat(1)
+    
+    func TM_radius(_ radius: Double)
     {
         self.layer.cornerRadius = CGFloat(radius)
     }
     
     
-    func border(pixel: Double, couleurHEX: String)
+    func TM_border_HEX(pixel: Double, couleurHEX: String)
     {
         self.layer.borderWidth = CGFloat(pixel)
         self.layer.borderColor = MyCustonColor().hexStringToUIColor(hex: "\(couleurHEX)").cgColor
     }
-
-    func border(couleurHEX: String)
+    
+    func TM_border_RGBA(pixel: Double, rouge: Int, vert: Int, bleu: Int, opacite: Int)
     {
+        self.layer.borderWidth = CGFloat(pixel)
+        self.layer.borderColor = UIColor.init(red: CGFloat(rouge), green: CGFloat(vert),blue: CGFloat(bleu), alpha: CGFloat(opacite)).cgColor
+    }
+
+    
+    
+    func TM_delfautBtm()
+    {
+        //Color
+        self.layer.backgroundColor  = Bg_Delfaut.cgColor
+        self.layer.borderColor      = Bd_Delfaut.cgColor
+        self.setTitleColor(TitleColorBlack, for: .normal)
         
-        self.layer.borderColor = MyCustonColor().hexStringToUIColor(hex: "\(couleurHEX)").cgColor
+        //Corner
+        self.layer.cornerRadius     = Radius
+        
+        //Border
+        self.layer.borderWidth      = Bd_size
+        
+        //Insets
+        self.contentEdgeInsets      = InsetsSize
+    }
+    
+    
+    func TM_primaryBtm()
+    {
+        //Color
+        self.layer.backgroundColor  = Bg_Primary.cgColor
+        self.layer.borderColor      = Bd_Primary.cgColor
+        self.setTitleColor(TitleColorWhite, for: .normal)
+        
+        //Corner
+        self.layer.cornerRadius     = Radius
+        
+        //Border
+        self.layer.borderWidth      = Bd_size
+        
+        //Insets
+        self.contentEdgeInsets      = InsetsSize
+    }
+    
+    func TM_successBtm()
+    {
+        //Color
+        self.layer.backgroundColor  = Bg_Success.cgColor
+        self.layer.borderColor      = Bd_Success.cgColor
+        self.setTitleColor(TitleColorWhite, for: .normal)
+        
+        //Corner
+        self.layer.cornerRadius     = Radius
+        
+        //Border
+        self.layer.borderWidth      = Bd_size
+        
+        //Insets
+        self.contentEdgeInsets      = InsetsSize
         
     }
     
-    func delfautBtm()
+    func TM_infoBtm()
     {
-        self.layer.backgroundColor = MyCustonColor().hexStringToUIColor(hex: "#ffffff").cgColor
-        self.setTitleColor(MyCustonColor().hexStringToUIColor(hex: "#292b2c") , for: .normal)
-        self.layer.cornerRadius = CGFloat(5)
-        self.layer.borderWidth = CGFloat(1)
-        self.layer.borderColor = MyCustonColor().hexStringToUIColor(hex: "#cccccc").cgColor
-        self.contentEdgeInsets = UIEdgeInsetsMake(5, 10, 5, 10)
-    }
-    
-    func delfautOutBtm()
-    {
-        self.layer.backgroundColor = UIColor.init(colorLiteralRed: 250, green: 250, blue: 250, alpha: 0).cgColor
-        self.setTitleColor(MyCustonColor().hexStringToUIColor(hex: "#0275d8") , for: .normal)
-        self.layer.cornerRadius = CGFloat(5)
-        self.layer.borderWidth = CGFloat(1)
-        self.layer.borderColor = MyCustonColor().hexStringToUIColor(hex: "#0275d8").cgColor
-        self.contentEdgeInsets = UIEdgeInsetsMake(5, 10, 5, 10)
-    }
-    
-    func primaryBtm()
-    {
-        self.layer.backgroundColor = MyCustonColor().hexStringToUIColor(hex: "#025aa5").cgColor
-        self.setTitleColor(MyCustonColor().hexStringToUIColor(hex: "#ffffff") , for: .normal)
-        self.layer.cornerRadius = CGFloat(5)
-        self.layer.borderWidth = CGFloat(1)
-        self.layer.borderColor = MyCustonColor().hexStringToUIColor(hex: "#01549b").cgColor
-        self.contentEdgeInsets = UIEdgeInsetsMake(5, 10, 5, 10)
-    }
-    
-    func successBtm()
-    {
-        self.layer.backgroundColor = MyCustonColor().hexStringToUIColor(hex: "#449d44").cgColor
-        self.setTitleColor(MyCustonColor().hexStringToUIColor(hex: "#ffffff") , for: .normal)
-        self.layer.cornerRadius = CGFloat(5)
-        self.layer.borderWidth = CGFloat(1)
-        self.layer.borderColor = MyCustonColor().hexStringToUIColor(hex: "#419641").cgColor
-        self.contentEdgeInsets = UIEdgeInsetsMake(5, 10, 5, 10)
-    }
-
-    func infoBtm()
-    {
-        self.layer.backgroundColor = MyCustonColor().hexStringToUIColor(hex: "#31b0d5").cgColor
-        self.setTitleColor(MyCustonColor().hexStringToUIColor(hex: "#ffffff") , for: .normal)
-        self.layer.cornerRadius = CGFloat(5)
-        self.layer.borderWidth = CGFloat(1)
-        self.layer.borderColor = MyCustonColor().hexStringToUIColor(hex: "#2aabd2").cgColor
-        self.contentEdgeInsets = UIEdgeInsetsMake(5, 10, 5, 10)
-    }
-
-    func warningBtm()
-    {
-        self.layer.backgroundColor = MyCustonColor().hexStringToUIColor(hex: "#ec971f").cgColor
-        self.setTitleColor(MyCustonColor().hexStringToUIColor(hex: "#ffffff") , for: .normal)
-        self.layer.cornerRadius = CGFloat(5)
-        self.layer.borderWidth = CGFloat(1)
-        self.layer.borderColor = MyCustonColor().hexStringToUIColor(hex: "#eb9316").cgColor
-        self.contentEdgeInsets = UIEdgeInsetsMake(5, 10, 5, 10)
-    }
-    
-    func dangerBtm()
-    {
-        self.layer.backgroundColor = MyCustonColor().hexStringToUIColor(hex: "#c9302c").cgColor
-        self.setTitleColor(MyCustonColor().hexStringToUIColor(hex: "#ffffff") , for: .normal)
-        self.layer.cornerRadius = CGFloat(5)
-        self.layer.borderWidth = CGFloat(1)
-        self.layer.borderColor = MyCustonColor().hexStringToUIColor(hex: "#c12e2a").cgColor
-        self.contentEdgeInsets = UIEdgeInsetsMake(5, 10, 5, 10)
-    }
-
-    func ombre()
-    {
-        let radius: CGFloat = self.frame.width / 2.0 //change it to .height if you need spread for height
-        let shadowPath = UIBezierPath(rect: CGRect(x: 0, y: 0, width: 2.1 * radius, height: self.frame.height))
-        //Change 2.1 to amount of spread you need and for height replace the code for height
+        //Color
+        self.layer.backgroundColor  = Bg_Info.cgColor
+        self.layer.borderColor      = Bd_Info.cgColor
+        self.setTitleColor(TitleColorWhite, for: .normal)
         
-        self.layer.cornerRadius = 2
+        //Corner
+        self.layer.cornerRadius     = Radius
+        
+        //Border
+        self.layer.borderWidth      = Bd_size
+        
+        //Insets
+        self.contentEdgeInsets      = InsetsSize
+        
+    }
+    
+    func TM_warningBtm()
+    {
+        //Color
+        self.layer.backgroundColor  = Bg_Warning.cgColor
+        self.layer.borderColor      = Bd_Warning.cgColor
+        self.setTitleColor(TitleColorWhite, for: .normal)
+        
+        //Corner
+        self.layer.cornerRadius     = Radius
+        
+        //Border
+        self.layer.borderWidth      = Bd_size
+        
+        //Insets
+        self.contentEdgeInsets      = InsetsSize
+        
+    }
+    
+    func TM_dangerBtm()
+    {
+        //Color
+        self.layer.backgroundColor  = Bg_Danger.cgColor
+        self.layer.borderColor      = Bd_Danger.cgColor
+        self.setTitleColor(TitleColorBlack, for: .normal)
+        
+        //Corner
+        self.layer.cornerRadius     = Radius
+        
+        //Border
+        self.layer.borderWidth      = Bd_size
+        
+        //Insets
+        self.contentEdgeInsets      = InsetsSize
+        
+    }
+    
+    func TM_ombre_Haut()
+    {
+        self.layer.cornerRadius = 1
         self.layer.shadowColor = UIColor.black.cgColor
-        self.layer.shadowOffset = CGSize(width: 0.5, height: 0.4)  //Here you control x and y
+        self.layer.shadowOffset = CGSize(width: -1.5, height: -1.5)
         self.layer.shadowOpacity = 0.5
-        self.layer.shadowRadius = 5.0 //Here your control your blur
-        self.layer.masksToBounds =  false
-        self.layer.shadowPath = shadowPath.cgPath
+        self.layer.shadowRadius = 1.5
+        
     }
     
-    func btmInsets()
+    func TM_ombre_bas()
+    {
+        self.layer.cornerRadius = 1
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOffset = CGSize(width: 1.5, height: 1.5)
+        self.layer.shadowOpacity = 0.5
+        self.layer.shadowRadius = 1.5
+        
+    }
+    
+    func TM_btmInsets()
     {
         self.contentEdgeInsets = UIEdgeInsetsMake(5, 10, 5, 10)
     }
 
     
-    /*
-     var border: Float = 0.0
-     {
-     didSet
-     {
-     self.layer.borderWidth = CGFloat(border)
-     self.layer.borderColor = UIColor.black.cgColor
-     }
-     } //[end border]
-     
-     var radius: Float = 0.0
-     {
-     didSet
-     {
-     self.layer.cornerRadius = CGFloat(radius)
-     }
-     } //[end radius]
-     
-     */
-    
+        
 } //[end class]
