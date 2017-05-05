@@ -19,7 +19,8 @@ class ViewController: UIViewController
     @IBOutlet weak var addButtOutlet: customButton!
     
     //Test
-    @IBOutlet weak var testBut: customButton!
+    @IBOutlet weak var testField: CustomTextField!
+    
     
     
     
@@ -58,7 +59,8 @@ class ViewController: UIViewController
             button.TM_ombre_bas()
         }
         
-        testBut.TM_border_HEX(pixel: 1, couleurHEX: "C2C2C2")
+        testField.TM_txtField_disabled()
+      
     }
     
     

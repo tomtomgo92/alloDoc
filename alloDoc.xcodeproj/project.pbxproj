@@ -15,6 +15,7 @@
 		04375A621EB8D475009C9ADD /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04375A611EB8D475009C9ADD /* Artwork.swift */; };
 		04375A681EB9CD20009C9ADD /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04375A671EB9CD20009C9ADD /* VCMapView.swift */; };
 		04375A6E1EB9E1AE009C9ADD /* customButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04375A6D1EB9E1AE009C9ADD /* customButton.swift */; };
+		E29BD92F1EBCA3D1009C9132 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29BD92E1EBCA3D1009C9132 /* CustomTextField.swift */; };
 		E2BEA4B81EBA33A900E47415 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = E2BEA4B71EBA33A900E47415 /* add.png */; };
 		E2BEA4BA1EBA3AE600E47415 /* MyCustonColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BEA4B91EBA3AE600E47415 /* MyCustonColor.swift */; };
 		E2D380AF1EBB517B0090A84F /* maps.png in Resources */ = {isa = PBXBuildFile; fileRef = E2D380AE1EBB517B0090A84F /* maps.png */; };
@@ -31,6 +32,7 @@
 		04375A611EB8D475009C9ADD /* Artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 		04375A671EB9CD20009C9ADD /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
 		04375A6D1EB9E1AE009C9ADD /* customButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customButton.swift; sourceTree = "<group>"; };
+		E29BD92E1EBCA3D1009C9132 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		E2BEA4B71EBA33A900E47415 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
 		E2BEA4B91EBA3AE600E47415 /* MyCustonColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustonColor.swift; sourceTree = "<group>"; };
 		E2D380AE1EBB517B0090A84F /* maps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maps.png; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			children = (
 				04375A6D1EB9E1AE009C9ADD /* customButton.swift */,
 				E2BEA4B91EBA3AE600E47415 /* MyCustonColor.swift */,
+				E29BD92E1EBCA3D1009C9132 /* CustomTextField.swift */,
 			);
 			name = myCustomFiles;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E29BD92F1EBCA3D1009C9132 /* CustomTextField.swift in Sources */,
 				04375A681EB9CD20009C9ADD /* VCMapView.swift in Sources */,
 				04375A281EB88A47009C9ADD /* ViewController.swift in Sources */,
 				04375A621EB8D475009C9ADD /* Artwork.swift in Sources */,

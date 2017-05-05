@@ -2,7 +2,7 @@
 //  customButton.swift
 //  alloDoc
 //
-//  Created by mac on 03/05/2017.
+//  Created by Thomas Millet on 03/05/2017.
 //  Copyright © 2017 mac. All rights reserved.
 //
 
