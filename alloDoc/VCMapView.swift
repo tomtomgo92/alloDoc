@@ -33,8 +33,10 @@ extension ViewController: MKMapViewDelegate
                  map views are set up to reuse annotation views when some are no longer visible. 
                  So the code first checks to see if a reusable annotation view is available before creating a new one.
                  */
+                
                 dequeuedView.annotation = annotation
                 view = dequeuedView
+                //view.pinTintColor = UIColor.green
             }
             else
             {
@@ -47,9 +49,20 @@ extension ViewController: MKMapViewDelegate
                 view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
                 view.canShowCallout = true
                 view.calloutOffset = CGPoint(x: -5, y: 5)
-                view.image = UIImage(named: "maps-location-circular-button.png")
-                view.rightCalloutAccessoryView = UIButton.init(type: .detailDisclosure) as UIView
-            }
+                //view.image = UIImage(named: "gps-location-map-pin-png-icon-32.png")
+                view.rightCalloutAccessoryView = UIButton.init(type: .infoDark) as UIView
+        
+                
+                switch self.artworks[0].discipline {
+                case "Sculture":
+                    view.pinTintColor = MyCustonColor().hexStringToUIColor(hex: "#31b0d5")
+                default:
+                    view.pinTintColor = UIColor.black
+                }
+                
+                
+                
+                }
             
             
             return view
@@ -58,5 +71,12 @@ extension ViewController: MKMapViewDelegate
         return nil
     }
 
+    func mapView(_ mapView: MKMapView!, annotationView view: MKAnnotationView!,
+                 calloutAccessoryControlTapped control: UIControl!)
+    {
+        let location = view.annotation as! Artwork
+        let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
+        location.mapItem().openInMaps(launchOptions: launchOptions)
+    }
 
-}
+}//[End Extention]

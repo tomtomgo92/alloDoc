@@ -15,6 +15,9 @@
 		04375A621EB8D475009C9ADD /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04375A611EB8D475009C9ADD /* Artwork.swift */; };
 		04375A681EB9CD20009C9ADD /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04375A671EB9CD20009C9ADD /* VCMapView.swift */; };
 		04375A6E1EB9E1AE009C9ADD /* customButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04375A6D1EB9E1AE009C9ADD /* customButton.swift */; };
+		04386CFE1EC5AF4700B2FCA5 /* gps-location-map-pin-png-icon-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 04386CFD1EC5AF4700B2FCA5 /* gps-location-map-pin-png-icon-32.png */; };
+		04386D031EC5CCA400B2FCA5 /* PublicArt.json in Resources */ = {isa = PBXBuildFile; fileRef = 04386D011EC5C57F00B2FCA5 /* PublicArt.json */; };
+		04386D051EC5DDCF00B2FCA5 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04386D041EC5DDCF00B2FCA5 /* JSON.swift */; };
 		E2BEA4B81EBA33A900E47415 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = E2BEA4B71EBA33A900E47415 /* add.png */; };
 		E2BEA4BA1EBA3AE600E47415 /* MyCustonColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BEA4B91EBA3AE600E47415 /* MyCustonColor.swift */; };
 		E2D380AF1EBB517B0090A84F /* maps.png in Resources */ = {isa = PBXBuildFile; fileRef = E2D380AE1EBB517B0090A84F /* maps.png */; };
@@ -31,6 +34,9 @@
 		04375A611EB8D475009C9ADD /* Artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 		04375A671EB9CD20009C9ADD /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
 		04375A6D1EB9E1AE009C9ADD /* customButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customButton.swift; sourceTree = "<group>"; };
+		04386CFD1EC5AF4700B2FCA5 /* gps-location-map-pin-png-icon-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "gps-location-map-pin-png-icon-32.png"; path = "../../../gps-location-map-pin-png-icon-32.png"; sourceTree = "<group>"; };
+		04386D011EC5C57F00B2FCA5 /* PublicArt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PublicArt.json; path = ../../../../Downloads/HonoluluArtResources/PublicArt.json; sourceTree = "<group>"; };
+		04386D041EC5DDCF00B2FCA5 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = ../../../../Downloads/HonoluluArtResources/JSON.swift; sourceTree = "<group>"; };
 		E2BEA4B71EBA33A900E47415 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
 		E2BEA4B91EBA3AE600E47415 /* MyCustonColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustonColor.swift; sourceTree = "<group>"; };
 		E2D380AE1EBB517B0090A84F /* maps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maps.png; sourceTree = "<group>"; };
@@ -74,8 +80,11 @@
 				04375A291EB88A47009C9ADD /* Main.storyboard */,
 				04375A2C1EB88A47009C9ADD /* Assets.xcassets */,
 				04375A2E1EB88A47009C9ADD /* LaunchScreen.storyboard */,
+				04386CFD1EC5AF4700B2FCA5 /* gps-location-map-pin-png-icon-32.png */,
 				04375A311EB88A47009C9ADD /* Info.plist */,
+				04386D041EC5DDCF00B2FCA5 /* JSON.swift */,
 				04375A671EB9CD20009C9ADD /* VCMapView.swift */,
+				04386D011EC5C57F00B2FCA5 /* PublicArt.json */,
 			);
 			path = alloDoc;
 			sourceTree = "<group>";
@@ -138,7 +147,8 @@
 				TargetAttributes = {
 					04375A211EB88A46009C9ADD = {
 						CreatedOnToolsVersion = 8.3.2;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 392BS2QM73;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -166,7 +176,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				04375A301EB88A47009C9ADD /* LaunchScreen.storyboard in Resources */,
+				04386D031EC5CCA400B2FCA5 /* PublicArt.json in Resources */,
 				E2D380AF1EBB517B0090A84F /* maps.png in Resources */,
+				04386CFE1EC5AF4700B2FCA5 /* gps-location-map-pin-png-icon-32.png in Resources */,
 				04375A2D1EB88A47009C9ADD /* Assets.xcassets in Resources */,
 				04375A2B1EB88A47009C9ADD /* Main.storyboard in Resources */,
 				E2BEA4B81EBA33A900E47415 /* add.png in Resources */,
@@ -181,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04375A681EB9CD20009C9ADD /* VCMapView.swift in Sources */,
+				04386D051EC5DDCF00B2FCA5 /* JSON.swift in Sources */,
 				04375A281EB88A47009C9ADD /* ViewController.swift in Sources */,
 				04375A621EB8D475009C9ADD /* Artwork.swift in Sources */,
 				04375A261EB88A47009C9ADD /* AppDelegate.swift in Sources */,
@@ -255,6 +268,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = Automatic;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -298,6 +312,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE_SPECIFIER = Automatic;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
@@ -308,8 +323,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 392BS2QM73;
 				INFOPLIST_FILE = alloDoc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = afpa.alloDoc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -322,8 +339,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 392BS2QM73;
 				INFOPLIST_FILE = alloDoc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = afpa.alloDoc;
 				PRODUCT_NAME = "$(TARGET_NAME)";

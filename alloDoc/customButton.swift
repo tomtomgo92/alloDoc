@@ -111,6 +111,8 @@ class customButton: UIButton
         self.layer.shadowRadius = 0.5 //Here your control your blur
     }
     
+    
+    
     func btmInsets()
     {
         self.contentEdgeInsets = UIEdgeInsetsMake(5, 10, 5, 10)

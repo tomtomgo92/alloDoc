@@ -22,7 +22,7 @@ class ViewController: UIViewController
     @IBOutlet weak var testBut: customButton!
     
     
-    
+    var artworks: [Artwork] = []
    
     
     // Initialise la carte a la coordonnee (Ici HINOLULU)
@@ -44,13 +44,15 @@ class ViewController: UIViewController
         
         
         //Voir les scultures 
-        let artwork = Artwork(title:        "King David Kalakaua",
+        artworks.append( Artwork(title:        "King David Kalakaua",
                               locationName: "Waikiti Gateway Park",
                               discipline:   "Sculture",
                               coordinate:   CLLocationCoordinate2D(latitude: 21.283921,
-                                                                   longitude: -157.831661))
+                                                                   longitude: -157.831661)
+        ))
         
-        mapView.addAnnotation(artwork)
+        mapView.addAnnotation(artworks[0])
+
 
         for button in speButtons
         {
@@ -59,18 +61,14 @@ class ViewController: UIViewController
             button.radius(8)
         }
         
-        addButtOutlet.border(pixel: 1.5, couleurHEX: "#FF0000")
         
+        backToMe((Any).self)
         
         //addButtOutlet.layer.borderColor = UIColor.cgColor
         
-        testBut.delfautOutBtm()
-        testBut.ombre(CouleurHex: "#000000")
-        testBut.border(pixel: 1.5, couleurHEX: "#FF0000")
-        
     }
     
-    
+
 
 //MARK: Centrer la map
     func centerMapOnLocation(location: CLLocation)
@@ -79,18 +77,15 @@ class ViewController: UIViewController
                                                                   regionRadius * 2.0,
                                                                   regionRadius * 2.0)
         mapView.setRegion(coordinateRegion, animated: true)
-    }
+    }//[End func CenterMap]
 
     @IBAction func backToMe(_ sender: Any)
     {
         centerMapOnLocation(location: initialLocation)
-    }
-    
-   
-  
+    }//[End Button]
     
     
 
-}
+}//[End Class]
 
 
