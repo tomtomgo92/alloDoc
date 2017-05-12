@@ -22,7 +22,7 @@ class ViewController: UIViewController
     @IBOutlet weak var testBut: customButton!
     
     
-    var artworks: [Artwork] = []
+    var artworks = [Artwork]()
    
     
     // Initialise la carte a la coordonnee (Ici HINOLULU)
@@ -68,7 +68,35 @@ class ViewController: UIViewController
         
     }
     
-
+    func loadInitialData() {
+        // 1
+        let fileName = Bundle.main.path(forResource: "PublicArt", ofType: "json")
+        
+        
+        var readError : Error?
+        var data = Data(contentsOf: URL(fileName), options: Data.ReadingOptions)
+        
+        
+        // 2
+        var error: Error?
+        let jsonObject: AnyObject! = JSONSerialization.JSONObjectWithData(data, options: JSONSerialization.ReadingOptions(0))
+        
+        
+        //let jsonObjet1: AnyObject = JSONSerialization.data(withJSONObject: data, options: JSONSerialization.WritingOptions)
+        
+        // 3
+        if let jsonObject = jsonObject as? [String: AnyObject], error == nil,
+            // 4
+            let jsonData = JSONValue.fromObject(object: jsonObject as AnyObject)?["data"]?.array {
+            for artworkJSON in jsonData {
+                if let artworkJSON = artworkJSON.array,
+                    // 5
+                    let artwork = Artwork.fromJSON(json: artworkJSON) {
+                    artworks.append(artwork)
+                }
+            }
+        }
+    }
 
 //MARK: Centrer la map
     func centerMapOnLocation(location: CLLocation)
